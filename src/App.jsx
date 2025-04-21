@@ -51,7 +51,7 @@ const App = () => {
 			setKeywords(response || 'No response found');
 		} catch (error) {
 			if (error.name === 'AbortError' || error.code === 'ERR_CANCELED') {
-				console.log("Запит було скасовано.");
+				console.log("The request was canceled.");
 			} else {
 				console.error('Error:', error);
 			}
